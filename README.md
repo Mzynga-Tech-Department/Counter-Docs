@@ -1,8 +1,12 @@
 # Counter
 
-
 Self custody peer to peer Ethereum market place
-See it in action at https://comingsoon.network/
+See it in action at https://ethereum.mzynga.com/
+
+The target user of this platform are individuals who want to sell and buy ethereum.
+See the guides below :-
+[How to buy](HowToBuy.md)
+[How to sell](HowToSell.md)
 
 The goal is to provide a self custody settlement layer for peer to peer transactions.
 
