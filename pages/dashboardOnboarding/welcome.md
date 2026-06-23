@@ -2,7 +2,8 @@
 
 **Route:** `/welcome`
 
-**Purpose:** Landing screen confirming desk identity and config before setup of dashboard begins.
+**Purpose:** 
+Landing screen confirming desk identity and config before setup of dashboard begins.
 
 **Props**
 None atm
@@ -11,14 +12,13 @@ None atm
 None atm
 
 **Data displayed**
-| Field | Example shown |
+
+| Field | Example shown | Source |
+|---|---|---|
 | Desk name | David OTC desk Test 1 |
 | Confirmed URL | https://example.counter.co.ke |
 | Supported assets | Ethereum Token on Ethereum Network |
 | Daily KES cap | 150,000 |
-
-**Source**
-https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/welcome.jsx
 
 **API calls**
 None atm
@@ -34,3 +34,5 @@ None atm
  None
 
  See https://counter-ui-delta.vercel.app/welcome subject to change
+
+ Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/welcome.jsx
