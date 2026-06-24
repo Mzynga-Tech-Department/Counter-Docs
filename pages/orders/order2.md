@@ -1,29 +1,34 @@
-## order2.jsx
+## order2
 
 **Route:** `/order2`
-**Purpose:** Buyer enters the destination crypto address for the Ethereum.
+
+**Purpose:** 
+Buyer enters the destination crypto address for the Ethereum.
 
 **Props**
-<!-- fill in -->
+Requires all the information about the order from URL
 
 **State**
-<!-- fill in: address input value -->
+None atm
 
 **Form fields**
-| Field | Example | Type `<!-- fill in -->` | Required? `<!-- fill in -->` |
+| Field | Example | Type | Required |
 |---|---|---|---|
 | Receiving crypto address | (free input) | string, address format | yes |
 
 **API calls**
-<!-- fill in: is the address format validated client-side (checksum/regex) or server-side on submit? -->
+https://api.mzynga.com/updateorder
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Validate order | <!-- fill in: navigates to order3, what validation runs before proceeding --> |
+| Validate order | `/order3` |
 
 **Validation**
-<!-- fill in: confirm address format check exists — button appears disabled in screenshot, presumably until a valid-looking address is entered -->
+The address is verified whether it is an ethereum address and that it is not a smart contract address.It must be a EOA.
+The address must verify for the button to activate.
 
 **Known issues / open questions**
-- Validate order button appears disabled in the screenshot — confirm exact enabling condition (non-empty field vs. actual address format check).
+- Pending testing
+
+Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order2.jsx

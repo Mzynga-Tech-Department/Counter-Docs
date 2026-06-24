@@ -1,13 +1,15 @@
-## order3.jsx
+## order3
 
 **Route:** `/order3`
-**Purpose:** Displays locked order details and payment instructions; order enters pending state.
+
+**Purpose:** 
+Displays locked order details and payment instructions;order enters pending state.
 
 **Props**
-<!-- fill in -->
+Takes the order id from url
 
 **State**
-<!-- fill in: order ID, payment status -->
+None ATM.
 
 **Data displayed**
 | Field | Example shown |
@@ -21,15 +23,17 @@
 | Order status | PENDING PAYMENT |
 
 **API calls**
-<!-- fill in: is order locked/created via an API call on this page load, or was it created in order2? does this page poll for payment confirmation? -->
+https://api.mzynga.com/readorder?id=${_id}
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Next (implied — "click next to enter mpesa payment code") | <!-- fill in: navigates to order4 --> |
+| Next | `/order4` |
 
 **Validation**
 N/A — display-only screen, no inputs.
 
 **Known issues / open questions**
-<!-- fill in: confirm how long an order stays "locked" before expiring if payment isn't made -->
+ - No room to cancel the order at this point
+
+Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order3.jsx

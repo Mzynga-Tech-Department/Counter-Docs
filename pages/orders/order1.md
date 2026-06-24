@@ -1,16 +1,18 @@
-## order1.jsx
+## order1
 
 **Route:** `/order1`
-**Purpose:** Buyer enters the KES amount they want to spend.
+
+**Purpose:** 
+Buyer enters the KES amount they want to spend.
 
 **Props**
-<!-- fill in -->
+Requires all the information about the order from URL
 
 **State**
-<!-- fill in: amount input value -->
+None atm
 
 **Form fields**
-| Field | Example | Type `<!-- fill in -->` | Required? `<!-- fill in -->` |
+| Field | Example | Type | Required |
 |---|---|---|---|
 | KES amount to spend | (free input) | numeric | yes |
 
@@ -19,15 +21,19 @@
 - Minimum buy per transaction (Kshs) — pulled from dashboard config
 
 **API calls**
-<!-- fill in: is min/max fetched here or passed down from order.jsx state? -->
+https://api.mzynga.com/updateorder
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Next | <!-- fill in: navigates to order2, passes amount forward how (state/context/query param)? --> |
+| Next | `/order2` |
 
 **Validation**
-<!-- fill in: confirm Next is disabled until amount is entered and within min/max bounds — button appears greyed/disabled in screenshot -->
+Next is disabled untill the amount is validated
 
 **Known issues / open questions**
-- Next button appears disabled in the screenshot — confirm exact enabling condition.
+- No way to cancel order at this point.
+- Pending testing.
+
+ Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order1.jsx
+

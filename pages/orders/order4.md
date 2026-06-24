@@ -1,30 +1,35 @@
-## order4.jsx
+## order4
 
 **Route:** `/order4`
-**Purpose:** Buyer submits their M-Pesa payment code to verify payment was made.
+
+**Purpose:** 
+Buyer submits their M-Pesa payment code to verify payment was made.
 
 **Props**
-<!-- fill in -->
+None ATM
 
 **State**
-<!-- fill in: payment code input value -->
+Payment status - default to false.
 
 **Form fields**
-| Field | Example | Type `<!-- fill in -->` | Required? `<!-- fill in -->` |
+| Field | Example | Type | Required? |
 |---|---|---|---|
 | M-Pesa payment code | (free input) | string | yes |
 
 **API calls**
-<!-- fill in: endpoint that verifies the M-Pesa code against the paybill transaction — likely calls Safaricom Daraja API or an internal reconciliation service, confirm -->
+https://api.mzynga.com/queryreciept?TransID=${pay_code}
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Verify | <!-- fill in: navigates to order5 on success — what happens on failure/invalid code? --> |
+| Verify | `/order5` |
 
 **Validation**
-<!-- fill in: confirm Verify is disabled until a code is entered — appears disabled in screenshot -->
+MPESA Code is validated
 
 **Known issues / open questions**
-- Verify button appears disabled in the screenshot — confirm exact enabling condition.
-- <!-- fill in: confirm error handling/messaging if the entered code doesn't match a real payment -->
+- Pending testing
+
+Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order4.jsx
+
+

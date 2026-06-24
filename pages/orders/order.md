@@ -1,33 +1,39 @@
-## order.jsx
+## order
 
 **Route:** `/order`
-**Purpose:** Order summary screen shown before a buyer commits to an order — displays the dashboard's current rate and purchase limits.
+
+**Purpose:** 
+Order summary screen shown before a buyer commits to an order — displays the dashboard's current rate and purchase limits.
 
 **Props**
-<!-- fill in: dashboard ID likely passed via route param or context — confirm -->
+Requires all the information about the order from URL
 
 **State**
-<!-- fill in -->
+None ATM
 
 **Data displayed**
-| Field | Example shown | Source `<!-- fill in: fetched from dashboard config / live oracle -->` |
+| Field | Example shown | Source |
 |---|---|---|
-| Dollar rate | Kshs per $1 (value blank in screenshot — confirm rendering bug or just empty test data) | |
-| Minimum purchase | KSHs | |
-| Maximum purchase | KSHs | |
-| Asset price | KSHs for 1.0000 Ethereum at $X | |
+| Dashbaord ID |  | |
+| Order Status | true/false | |
+| Timestamp |  | |
+| KES Price |  | |
+| Minimum Buy |  | |
+| Asset Treasury |  | |
 
 **API calls**
-<!-- fill in: endpoint fetching dashboard rate/limits, and whether asset price is live-polled here or fetched once on load -->
+https://api.mzynga.com/createorder
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Lock order | <!-- fill in: navigates to order1? does it reserve the rate for a time window? --> |
-| Return to dashboard | <!-- fill in: navigates back to which dashboard route --> |
+| Lock order | `/order1` |
+| Return to dashboard | `/dashboard` |
 
 **Validation**
-N/A — display-only screen, no inputs.
+All fields are validated before order is created
 
 **Known issues / open questions**
-- Screenshot shows blank values for dollar rate, min/max purchase, and dollar price — confirm whether this is a data-loading bug or just an unconfigured test dashboard.
+- Pending testing.
+
+ Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order.jsx
