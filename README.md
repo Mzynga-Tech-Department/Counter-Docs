@@ -1,24 +1,29 @@
-# Counter-Docs
+# Counter
 
+Self custody peer to peer Ethereum market place.
+This system currently supports accounts of type MPESA Paybill and Ethereum Token on Ethereum Mainnet.
 
-Self custody peer to peer ethereum market place
-It is made up of 6 scalable services and couchdb to hold sessions
+The target user of this platform are individuals who want to sell and buy ethereum.
+See the guides below :-
 
-Services on POKT
+[How to buy](HowToBuy.md)
 
--Confirmation service - confirmation - this exposes the endpoint that the payment provider write the receipt that have been paid
+[How to sell](HowToSell.md)
 
--Signer service - signer - this is the service that signs the ethereum amount and releases it to the buyer's wallet transaction when fiat payment is made nd confirmed by confirmation service
-The rpc provider is api.pocket.network
+The goal is to provide a self custody settlement layer for peer to peer transactions.
 
--Generator service - generator - This service takes a 12 word seed phrase and uses the phrase to generate an ethereum wallet that acts as a treasury/wallet address.The rpc provider is api.pocket.network
+The seven modules powering this settlement layer are :-
 
--Heart Beat  - heartbeat - This service keeps a pulse on the entire RPC health by ensuring a blocknumber and restarting the provider if it fails.It acts a authentication middleware,generating request signatures.The rpc provider is api.pocket.network
+-Confirmation service -  this exposes an endpoint for the payment gateway to write the receipt for payment that has been made,through fiat and for what crypto in this case Eth.
 
-Services not POKT
+-Signer service - this is the service that signs the Eth amount that has been bought.The rpc provider is https://api.pocket.network
 
--API service - apicontainer - this exposes the endpoints that handle most CRUD operations
+-Generator service - this service allows for generation of wallet address.Currently supporting Ethereum chain and has the ability to support more chains hence more tokens.
 
--CouchDB - couchdb - for persistence data storage - majorly consumed by API service 
+-Heart Beat  - this service keeps system monitored ensuring a RPC pulse every 5 secs,Validates orders and generates signatures.
 
+-API service - this exposes the endpoints that handle all CRUD operations.
 
+-CouchDB - for persistence data storage - majorly consumed by API service .
+
+The entire system RPC is powered by https://api.pocket.network/

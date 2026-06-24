@@ -3,6 +3,9 @@
 ## Supported Versions
 
 We are currently at early iteration stage.
+We support Ethereum chain 
+All RPC request are courtesy of @POKTNetwork
+api.pocket.network
 
 | Version | Supported          |
 | ------- | ------------------ |
