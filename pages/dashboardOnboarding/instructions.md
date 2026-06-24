@@ -30,7 +30,7 @@ None
 
 N/A — informational screen, no inputs.
 
-**Known issues / open questions**
+**Known issues / open questions:**
 None ATM.
 
 **See** https://counter-ui-delta.vercel.app/instructions 
