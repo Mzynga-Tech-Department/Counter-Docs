@@ -22,7 +22,7 @@ Requires an active dashboard state.
 | Valued at Kshs | 345,658 |
 | Max. buy | 150,000 |
 | Min. buy | 1,500 |
-| Creation Time | 20:00 PM |
+| Creation Time | 08:00 PM |
 | Expiry Time | 02:00 AM |
 
 **API calls**
