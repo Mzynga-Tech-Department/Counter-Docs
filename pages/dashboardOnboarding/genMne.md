@@ -47,3 +47,9 @@ The seller in this case has to confirm that the developers cannot recover the mn
 **Known issues / open questions**
 Needs more testing
 Pending security audit
+
+See https://counter-ui-delta.vercel.app/genMne 
+Subject to change
+
+Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/genMne.jsx
+

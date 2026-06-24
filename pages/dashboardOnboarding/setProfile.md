@@ -5,7 +5,6 @@
 **Purpose:** 
 Form to create a new dashboard profile.
 
-
 **Props**
 None atm
 

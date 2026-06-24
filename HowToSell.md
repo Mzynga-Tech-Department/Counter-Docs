@@ -1,4 +1,5 @@
 ## How to sell
+
 To sell Ethereum on counter you need to have a payment gateway configured.
 The gateway must support Kshs and accounts of type MPESA Paybills.
 

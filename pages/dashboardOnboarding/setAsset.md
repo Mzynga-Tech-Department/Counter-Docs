@@ -37,7 +37,7 @@ All fields are required.
 **Known issues / open questions**
 - Save button appears greyed/disabled in current build — confirm intended trigger condition.
 
- See https://counter-ui-delta.vercel.app/setAsset 
- Subject to change
+See https://counter-ui-delta.vercel.app/setAsset 
+Subject to change
 
- Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/setAsset.jsx
+Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/setAsset.jsx

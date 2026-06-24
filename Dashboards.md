@@ -1,4 +1,5 @@
 ## Dashboards
+
 Dashboards in counter are the marketplaces where the information about the ethereum that is being sold and the exchange rates are displayed.
 
 All the information form fill in [How to sell](/HowToSell) steps accumulate to create a 
