@@ -3,15 +3,17 @@
 **Route:** `/order3`
 
 **Purpose:** 
-Displays locked order details and payment instructions;order enters pending state.
+Displays locked order details and payment instructions;Order enters pending state.
 
-**Props**
-Takes the order id from url
+**Props:**
 
-**State**
+Takes the order ID from url.
+
+**State:**
+
 None ATM.
 
-**Data displayed**
+**Data displayed:**
 | Field | Example shown |
 |---|---|
 | Ethereum price for this transaction | Ksh 245,000 |
@@ -22,7 +24,7 @@ None ATM.
 | Account number (for paybill payment) | ORDER2354 |
 | Order status | PENDING PAYMENT |
 
-**API calls**
+**API calls:**
 https://api.mzynga.com/readorder?id=${_id}
 
 **Actions**
@@ -30,10 +32,12 @@ https://api.mzynga.com/readorder?id=${_id}
 |---|---|
 | Next | `/order4` |
 
-**Validation**
+**Validation:**
+
 N/A — display-only screen, no inputs.
 
-**Known issues / open questions**
+**Known issues / open questions:**
+
  - No room to cancel the order at this point
 
 Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order3.jsx
