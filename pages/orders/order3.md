@@ -1,4 +1,4 @@
-## order3
+## Order3
 
 **Route:** `/order3`
 
