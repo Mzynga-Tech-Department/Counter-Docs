@@ -5,14 +5,15 @@
 **Purpose:** 
 Form to create a new dashboard profile.
 
-**Props**
+**Props:**
 None atm
 
-**State**
-isDisabled
-min_buy
+**State:**
 
-**Form fields**
+* isDisabled
+* min_buy
+
+**Form fields:**
 | Field | Example | Type | Required ? |
 |---|---|---|---|
 | Name | profile_Name | String | YES |
@@ -23,19 +24,21 @@ min_buy
 | Minimum buy amount (Kshs) | 150 |Number | YES |
 | Dollar rate | 130 | Number| YES |
 
-**API calls**
+**API calls:**
 https://api.mzynga.com/createprofile
 
-**Actions**
+**Actions:**
 | Control | Behavior |
 |---|---|
 | Submit | `setAsset` |
 
-**Validation**
-All fields are validated to their type and logic.
-Some are editable others are not.
+**Validation:**
 
-**Known issues / open questions**
+All fields are validated to their type and logic.
+Some can be edited while others cannot.
+
+**Known issues / open questions:**
+
 None atm
 
  See https://counter-ui-delta.vercel.app/setProfile 
