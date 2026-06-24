@@ -35,7 +35,7 @@ None atm
 
 **Validation:**
 
-All checkboxes **must** be ticked before you can navigate to next page.
+ALL checkboxes **must** be ticked before you can navigate to next page.
 
 **Known issues / open questions:**
 - Button label ("YEAH WHEREVER") reads as placeholder/dev copy — confirm if intentional before shipping.
