@@ -1,13 +1,15 @@
-## instructions.jsx
+## instructions
 
 **Route:** `/instructions`
-**Purpose:** Explains dashboard rules/limits before the user creates one.
+
+**Purpose:** 
+Explains dashboard rules/limits before the user creates one.
 
 **Props**
-<!-- fill in -->
+None ATM
 
 **State**
-<!-- fill in -->
+None ATM
 
 **Data displayed**
 - Up to 20 active dashboards per paybill
@@ -17,15 +19,21 @@
 - At least one supported asset required to activate; currently only Ethereum Token on Ethereum Mainnet
 
 **API calls**
-<!-- fill in: is any of this copy dynamic/config-driven, or static text? -->
+None
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Set up dashboards | <!-- fill in: navigates to setProfile? --> |
+| Set up dashboards | `setProfile` |
 
 **Validation**
 N/A — informational screen, no inputs.
 
 **Known issues / open questions**
-<!-- fill in -->
+None ATM.
+
+See https://counter-ui-delta.vercel.app/instructions 
+Subject to change
+
+Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/instructions.jsx
+

@@ -1,36 +1,46 @@
-## setProfile.jsx
+## setProfile
 
 **Route:** `/setProfile`
-**Purpose:** Form to create a new dashboard profile.
+
+**Purpose:** 
+Form to create a new dashboard profile.
+
 
 **Props**
-<!-- fill in -->
+None atm
 
 **State**
-<!-- fill in: one var per field below, confirm names/types -->
+isDisabled
+min_buy
 
 **Form fields**
-| Field | Example | Type `<!-- fill in -->` | Required? `<!-- fill in -->` |
+| Field | Example | Type | Required ? |
 |---|---|---|---|
-| Name | invoice #1-100000 | | |
-| Paybill number | 4107329 | | |
-| Unique link | kangethe | | |
-| Timestamp created | 6/20/2026 | | auto-set, not user input — confirm |
-| Maximum buy amount (Kshs) | 150000 | | |
-| Minimum buy amount (Kshs) | 15000 (default shown: 150) | | |
-| Dollar rate | 1.02 | | |
+| Name | profile_Name | String | YES |
+| Paybill number | 4107329 | Number | YES |
+| Unique link | kangethe | String| | YES
+| Timestamp created | 6/20/2026 | Timestamp | YES |
+| Maximum buy amount (Kshs) | 150000 | Number | YES |
+| Minimum buy amount (Kshs) | 150 |Number | YES |
+| Dollar rate | 130 | Number| YES |
 
 **API calls**
-<!-- fill in: POST endpoint on submit, payload shape, response handling -->
+https://api.mzynga.com/createprofile
 
 **Actions**
 | Control | Behavior |
 |---|---|
-| Submit | <!-- fill in --> |
+| Submit | `setAsset` |
 
 **Validation**
-<!-- fill in: min < max enforcement? unique link availability check? required field checks? -->
+All fields are validated to their type and logic.
+Some are editable others are not.
 
 **Known issues / open questions**
-<!-- fill in -->
+None atm
+
+ See https://counter-ui-delta.vercel.app/setProfile 
+ Subject to change
+
+ Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/setProfile.jsx
 
