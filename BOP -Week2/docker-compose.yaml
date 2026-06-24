@@ -1,0 +1,136 @@
+name: counter-mvp
+
+networks:
+
+  counter-internal:
+    driver: bridge
+    internal: true
+
+  counter-external:
+    driver: bridge
+    internal: false
+
+secrets:
+
+services:
+
+  nats:
+    image: nats:latest
+    networks:
+      - counter-internal
+    restart: unless-stopped
+
+  couchdb:
+    image: couchdb:latest
+    networks:
+      - counter-internal
+    secrets:
+
+    volumes:
+      - couchdb_data:/opt/couchdb/data
+      - ./couchdb-local.ini:/opt/couchdb/etc/local.d/custom.ini:ro
+      - ./start-couchdb.sh:/start-couchdb.sh:ro
+    command: /start-couchdb.sh
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5984/_up"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 1m
+
+  couchdb-init:
+    image: curlimages/curl:latest
+    depends_on:
+      couchdb:
+        condition: service_healthy
+    networks:
+      - counter-internal
+    secrets:
+
+    volumes:
+      - ./couchdb-init.sh:/couchdb-init.sh:ro
+    command: /bin/sh /couchdb-init.sh
+    restart: "no"
+
+  heartbeat: #Depends on RPC from https://api.pocket.network to monitor RPC health
+    image: counter:heartbeat
+    depends_on:
+      - nats
+    secrets:
+
+    environment:
+
+    networks:
+      - counter-internal
+    restart: on-failure
+
+  generator: #Depends on RPC from https://api.pocket.network to generate account
+    image: counter:generator
+    depends_on:
+      - nats
+      - couchdb-init
+    secrets:
+
+    environment:
+
+    networks:
+      - counter-internal
+    restart: on-failure
+
+  signer: #Depends on RPC from https://api.pocket.network to sign transactions
+    image: counter:signer
+    tty: true
+    stdin_open: true
+    depends_on:
+      - nats
+      - couchdb-init
+    secrets:
+
+    environment:
+
+    networks:
+      - counter-internal
+      - counter-external
+    restart: on-failure
+
+  confirmation: #Records the receipt for payments made and share them for accessibility
+    image: counter:confirmation
+    depends_on:
+      - nats
+    secrets:
+
+    environment:
+
+    networks:
+      - counter-internal
+    restart: on-failure
+
+  apicontainer: #Exposes CRUD functions for all other services
+    image: counter:apicontainer
+    depends_on:
+      - nats
+    secrets:
+
+    environment:
+
+    networks:
+      - counter-internal
+    restart: on-failure
+
+  setup: #Online then destroy after 1st transaction
+    image: counter:setup
+    depends_on:
+      - nats
+      - couchdb
+      - couchdb-init
+    secrets:
+
+    environment:
+
+    networks:
+      - counter-internal
+    restart: on-failure
+
+volumes:
+  couchdb_data:
