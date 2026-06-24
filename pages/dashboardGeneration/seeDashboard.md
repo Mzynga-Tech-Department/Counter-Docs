@@ -5,35 +5,24 @@
 **Purpose:** 
 Displays dashboard specific information about:
 
-Assigned dashboard name - dashboardname
-
-Configured paybill account - paybill
-
-Dollar(assuming it's priced in $) to KES exchange rate - dollar_rate
-
-Asset selected to be sold on the dashboard - asset_id
-
-Dashbaord treasury wallet - asset_treasury
-
-Withdrawal address of the dashboard - origin_Address
-
-Maximum purchase in KES - maximum_buy_kshs
-
-Minimum purchase in KES - minimum_buy_kshs
+- Assigned dashboard name - dashboardname
+* Configured paybill account - paybill
+* Dollar(assuming it's priced in $) to KES exchange rate - dollar_rate
+* Asset selected to be sold on the dashboard - asset_id
+* Dashbaord treasury wallet - asset_treasury
+* Withdrawal address of the dashboard - origin_Address
+* Maximum purchase in KES - maximum_buy_kshs
+* Minimum purchase in KES - minimum_buy_kshs
 
 **Props:**
 None ATM
 
 **State:**
-treasurySt
-
-profileSt
-
-priceInfoSt
-
-priceInfoStKshs
-
-dashboardSt
+* treasurySt
+* profileSt
+* priceInfoSt
+* priceInfoStKshs
+* dashboardSt
 
 **Data displayed**
 | Field | Example shown |
