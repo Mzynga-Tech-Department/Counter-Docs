@@ -1,14 +1,14 @@
-## order5
+## Order5
 
 **Route:** `/order5`
 
 **Purpose:** 
 Final confirmation screen — payment verified, order marked complete, displays transaction summary.
 
-**Props**
-Gets the order id from url.
+**Props:**
+Gets the order ID from url.
 
-**State**
+**State:**
 None ATM
 
 **Data displayed**
@@ -21,7 +21,7 @@ None ATM
 | Order status | Completed |
 | Settlement note | ~15 secs for ETH to be sent and reflect on the receiving address, after which order status updates |
 
-**API calls**
+**API calls:**
 https://api.mzynga.com/readorder?id=${order_id}
 
 **Actions**
@@ -29,7 +29,8 @@ https://api.mzynga.com/readorder?id=${order_id}
 |---|---|
 | Return to Dashboard | `/dashboard` |
 
-**Validation**
+**Validation:**
+
 N/A — display-only confirmation screen.
 
 **Known issues / open questions**

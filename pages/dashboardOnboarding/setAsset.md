@@ -5,15 +5,15 @@
 **Purpose:** 
 Configures which asset a dashboard sells and it's price source.
 
-**Props**
+**Props:**
 None atm
 
-**State**
-isDisabled
-isUpdate
-price
+**State:**
+* isDisabled
+* isUpdate
+* price
 
-**Form fields**
+**Form fields:**
 | Field | Example | Type  | Required? |
 |---|---|---|---|
 | Supported asset | Ethereum (ETH) | read only | fixed |
@@ -31,10 +31,11 @@ https://api.mzynga.com/createasset
 | Update price | Pulls the price of ETH from the selected Oracle |
 | Save | `genMne` |
 
-**Validation**
+**Validation:**
+
 All fields are required.
 
-**Known issues / open questions**
+**Known issues / open questions:**
 - Save button appears greyed/disabled in current build — confirm intended trigger condition.
 
 See https://counter-ui-delta.vercel.app/setAsset 

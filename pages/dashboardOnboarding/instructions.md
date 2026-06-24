@@ -5,10 +5,10 @@
 **Purpose:** 
 Explains dashboard rules/limits before the user creates one.
 
-**Props**
+**Props:**
 None ATM
 
-**State**
+**State:**
 None ATM
 
 **Data displayed**
@@ -16,9 +16,9 @@ None ATM
 - Dashboard requires: dollar rate, paybill number, supported asset(s)
 - Dollar rate explanation (higher = pricier for buyer, lower = cheaper)
 - One paybill per dashboard
-- At least one supported asset required to activate; currently only Ethereum Token on Ethereum Mainnet
+- At least one supported asset required to activate (currently only Ethereum Token on Ethereum Mainnet)
 
-**API calls**
+**API calls:**
 None
 
 **Actions**
@@ -26,14 +26,15 @@ None
 |---|---|
 | Set up dashboards | `setProfile` |
 
-**Validation**
+**Validation:**
+
 N/A — informational screen, no inputs.
 
-**Known issues / open questions**
+**Known issues / open questions:**
 None ATM.
 
-See https://counter-ui-delta.vercel.app/instructions 
+**See** https://counter-ui-delta.vercel.app/instructions 
 Subject to change
 
-Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/instructions.jsx
+**Source** https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/instructions.jsx
 

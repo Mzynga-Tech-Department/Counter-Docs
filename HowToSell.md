@@ -18,26 +18,26 @@ welcome → termsandcondtions → instructions → setProfile → setAsset → g
 
 The flow is as follows 
 
-Step 1 :- [Welcome](/pages/welcome)
+Step 1 :- [Welcome](pages/dashboardOnboarding/welcome.md)
 Confirms the indentity of the URL you are visiting and spells out the configured identity.
 
-Step 2 : - [TermsConditions](/pages/termsandcondtions)
+Step 2 : - [TermsConditions](pages/dashboardOnboarding/termsandcondtions.md)
 Highlights the leagal boundaries that should be observed during the configuration of the dashboard and what are the defaults.
 
-Step 3 : - [Instructrions](/pages/instructions)
+Step 3 : - [Instructrions](pages/dashboardOnboarding/instructions.md)
 This page is responsible for displaying the instructions on how to create dashboards and what are the limits that exist.
 
-Step 4 : - [Set profile](/pages/setProfile)
+Step 4 : - [Set profile](/pages/dashboardOnboarding/setProfile.md)
 On this page the seller creates a new dashboard profile.The maximum number of dashboards a seller can create at a time are 20 dashboards.
 
-Step 5 : - [Set Asset](/pages/setAsset)
+Step 5 : - [Set Asset](/pages/dashboardOnboarding/setAsset.md)
 On this page the seller chooses which asset to support on the dashboard.The default chosen is Ethereum on Ethereum Mainnet.
 
-Step 6 : - [Generate a wallet](/pages/genMne)
+Step 6 : - [Generate a wallet](/pages/dashboardOnboarding/genMne.md)
 At this point the seller generates a wallet address that holds the crypto tokens that will be available for sale.The system takes a mnemonic phrase from the seller and generates a wallet address to sign the crypto that will be released.
 The system does not save the mnemonic phrase.
 
-Step 7 : - [Set Treasury](/pages/setTreasury) 
+Step 7 : - [Set Treasury](/pages/dashboardOnboarding/setTreasury.md) 
 This is an important step since it combines step 5,6 into one treasury made up of the generated address,balance and withdrawal address
 NB:- A withdrawal address is any ethereum address which is saved on the platform to allow for emergency withdrawals.The seller has full control of this address.
 

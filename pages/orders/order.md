@@ -1,17 +1,19 @@
-## order
+## Order
 
 **Route:** `/order`
 
 **Purpose:** 
-Order summary screen shown before a buyer commits to an order — displays the dashboard's current rate and purchase limits.
+Order summary screen shown before a buyer commits to an order.
 
-**Props**
+Displays the dashboard's current rate and purchase limits.
+
+**Props:**
 Requires all the information about the order from URL
 
-**State**
+**State:**
 None ATM
 
-**Data displayed**
+**Data displayed:**
 | Field | Example shown | Source |
 |---|---|---|
 | Dashbaord ID |  | |
@@ -24,16 +26,17 @@ None ATM
 **API calls**
 https://api.mzynga.com/createorder
 
-**Actions**
+**Actions:**
 | Control | Behavior |
 |---|---|
 | Lock order | `/order1` |
 | Return to dashboard | `/dashboard` |
 
-**Validation**
-All fields are validated before order is created
+**Validation:**
 
-**Known issues / open questions**
+**ALL** fields are validated before order is created.
+
+**Known issues / open questions:**
 - Pending testing.
 
- Source https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order.jsx
+ **Source** https://github.com/MikeMwambia-TrojanSystem/UI-Counter/blob/main/src/pages/order.jsx

@@ -5,10 +5,10 @@
 **Purpose:** 
 All the dashboards saved on the platform are displayed on this page.
 
-**Props**
+**Props:**
 None atm
 
-**State**
+**State:**
 None
 
 **Data displayed**
@@ -29,10 +29,10 @@ https://api.mzynga.com/getdashboards
 | All dashboards | `/listDashboard` |
 | Buyers page | `/dashboard` |
 
-**Validation**
+**Validation:**
 N/A — display-only screen,no inputs.
 
-**Known issues / open questions**
+**Known issues / open questions:**
 Pending testing
 
 See https://counter-ui-delta.vercel.app/listDashboard 
