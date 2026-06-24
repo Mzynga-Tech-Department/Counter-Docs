@@ -1,20 +1,20 @@
-## order4
+## Order4
 
 **Route:** `/order4`
 
 **Purpose:** 
 Buyer submits their M-Pesa payment code to verify payment was made.
 
-**Props**
+**Props:**
 None ATM
 
-**State**
+**State:**
 Payment status - default to false.
 
 **Form fields**
 | Field | Example | Type | Required? |
 |---|---|---|---|
-| M-Pesa payment code | (free input) | string | yes |
+| M-Pesa payment code | UFOHH8E4XY | string | yes |
 
 **API calls**
 https://api.mzynga.com/queryreciept?TransID=${pay_code}
@@ -25,7 +25,8 @@ https://api.mzynga.com/queryreciept?TransID=${pay_code}
 | Verify | `/order5` |
 
 **Validation**
-MPESA Code is validated
+
+MPESA Code is validated.
 
 **Known issues / open questions**
 - Pending testing
