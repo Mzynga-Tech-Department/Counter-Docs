@@ -5,11 +5,11 @@
 **Purpose:** 
 Displays infomation about the dashboard and the sell orders that are open to the public
 
-**Props**
+**Props:**
 Requires a block number and an authentication signature
 MainDashboard component
 
-**State**
+**State:**
 Requires an active dashboard state
 
 **Data displayed**
