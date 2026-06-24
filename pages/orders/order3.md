@@ -3,7 +3,7 @@
 **Route:** `/order3`
 
 **Purpose:** 
-Displays locked order details and payment instructions;Order enters pending state.
+Displays locked order details and payment instructions; Order enters pending state.
 
 **Props:**
 
