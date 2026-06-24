@@ -21,7 +21,7 @@ The flow is as follows
 Step 1 :- [Welcome](pages/dashboardOnboarding/welcome.md)
 Confirms the indentity of the URL you are visiting and spells out the configured identity.
 
-Step 2 : - [TermsConditions](pages/dashboardOnboarding/termsandcondtions)
+Step 2 : - [TermsConditions](pages/dashboardOnboarding/termsandcondtions.md)
 Highlights the leagal boundaries that should be observed during the configuration of the dashboard and what are the defaults.
 
 Step 3 : - [Instructrions](/pages/dashboardOnboarding/instructions)
