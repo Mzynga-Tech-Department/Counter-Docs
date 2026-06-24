@@ -10,8 +10,13 @@ This is done to abide to laws governing the region where counter service is offe
 None
 
 **State**
-isTaxes,isPrices,isSafe,iswithdrawalA,isTrade.
-Are the states that are set by the checkboxes on this page.
+isTaxes
+isPrices
+isSafe
+iswithdrawalA
+isTrade
+
+These are the states that are set by the checkboxes on this page.
 
 **Data displayed**
 5 checkboxes:
